@@ -1,0 +1,194 @@
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+  
+#who::after{
+    content:'';
+    position: absolute;
+    height: 101%;
+    width:100.4%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    --angle:0deg;
+    background-image: conic-gradient(from var(--angle), cyan,rgb(151, 67, 151));
+    animation:3s spinRight linear infinite;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+@keyframes spinRight{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle:360deg
+    }
+}
+
+.open{
+    left: 0;
+} 
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+.float{
+    animation: float 3s ease-in-out infinite;
+}
+
+.float2{
+    animation: float 3s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.float3{
+    animation: float 3s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.float4{
+    animation: float 3s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.float:hover, .float2:hover, .float3:hover, .float4:hover{
+    animation-play-state: paused;
+}
+
+@media (max-width:1024px) {
+    #navbar{
+    padding-left: 0;
+    padding-right: 0;
+    }
+}
+
+@media (min-width:900px){
+
+    #component{
+        display: block;
+    }
+
+    #menu-btn{
+        display: none;
+    }
+}
+
+@media (max-width:1200px){
+    #who{
+        flex-direction: column;
+    }
+
+    #no-b{
+        border:none;
+    }
+
+    #cont{
+        justify-content: center;
+    }
+}
+
+@media (max-width:770px){
+    #who{
+        width: 140%;
+    }
+}
+
+@media(max-width:380px){
+    #who{
+        width:370px;
+    }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1536px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  border:1px solid black;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+.item {
+  width: 200px;
+  height: 100px;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  margin-bottom: 10px;
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}

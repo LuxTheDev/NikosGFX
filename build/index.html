@@ -1,0 +1,247 @@
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/output.css">
+  <link rel="stylesheet" href="/src/input.css">
+  <link rel="stylesheet" href="animation.css">
+  <link rel="shortcut icon" href="/images/icon.png">
+  <title> Niko's Portfolio</title>
+</head>
+
+<body class="bg-gradient-to-br from-sky-300 to-purple-300 text-blue-900
+font-mono min-h-screen flex flex-col">
+
+
+  <!-- Top Navbar -->
+  <div class="w-full h-16 border-b border-b-black 
+  flex justify-evenly items-center bg-white  
+  transition-all duration-500" id="navbar">
+
+          <a href="#about" class="text-xl hover:opacity-80 hidden w-fit" id="component">About</a>
+          <a href="#games" class="text-xl hover:opacity-80 hidden w-fit" id="component">Games</a>
+      
+      <img src="/images/gif.gif" class="border border-black rounded-full w-12">
+      
+          <a href="#gfx" class="text-xl hover:opacity-80 hidden w-fit" id="component">GFX</a>
+          <a href="#contact" class="text-xl hover:opacity-80 hidden w-fit" id="component">Contact</a>
+  
+      <div class="cursor-pointer fixed left-5 z-50 max-[380px]:left-1" id="menu-btn">
+          <div class="w-12 h-9 bg-sky-100 hover:bg-white border border-black rounded transition-all duration-500" id="menu-btn__burger">
+              <span id="menuSpan" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">-</span>
+          </div>
+      </div>
+  </div>  
+
+
+      <nav class="w-60 h-full bg-transparent backdrop-blur-md border-r border-r-black fixed top-0 z-40 -left-64 transition-all duration-300 ease-in-out" id="sidebar">
+          <div class="flex flex-col h-full w-full text-center pt-5 gap-2.5">
+            <h1 class="mt-10 font-bold text-2xl">Options</h1>
+            <a href="#about">About</a>
+            <a href="#games">Games</a>
+            <a href="#gfx">GFX</a>
+            <a href="#contact">Contact</a>
+          </div>
+      </nav>
+
+  </div>
+
+  <!-- Main Page Content -->
+
+  <main class="w-10/12 mx-auto flex flex-wrap justify-evenly p-10 border-x border-black 
+  h-fit items-center flex-grow flex-col relative max-[500px]:border-none max-[500px]:w-full" id="main">
+
+  <h1 id="about" class="text-3xl mb-10 underline text-center">About me</h1>
+      <div class="w-10/12 mx-auto flex flex-wrap justify-center
+      border-white h-fit items-center flex-grow flex-row mb-10" id="cont">
+
+        <div class="bg-gradient-to-bl relative w-full h-fit py-5 from-sky-200 from-10% via-purple-200 via-30% to-sky-200 to-90%
+          rounded border border-black flex justify-evenly items-center mb-10" id="who">
+
+          <img src="/images/profile.png" class="mx-5 w-2/6">
+
+          <div class="w flex flex-col items-center border-l border-black mx-auto text-center" id="no-b">
+
+            <h1 class="mx-5 font-bold text-xl underline mb-2">Who am I ?</h1>
+
+            <p class="mx-5">
+              Hi there! I'm Niko (A.K.A Nikosgaming), I've been a GFX artist for over 2 years now with over 200m+ visits in contribution,
+              I have the experience and knowledge to make the best possible design for your game, avatar and anything you'd like!
+              <p class="text-2xl font-sans font-bold bg-gradient-to-r from-blue-600
+              via-indigo-400 to-purple-500 inline-block text-transparent bg-clip-text">The limit is your imagination!</p>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    
+    <hr class="h-px mb-10 w-1/2 bg-gray-500 border-0">
+
+    <!-- Contributions -->
+
+    <div class="w-full flex flex-col justify-center" id="games">
+
+      <h1 class="text-3xl mb-10 underline text-center">Games I've worked with</h1>
+
+      <div class="w-full border-x border-black flex flex-row justify-evenly p-5 rounded-3xl flex-grow flex-wrap max-[430px]:border-none">
+        
+        <div class="w-1/5 min-w-[250px] mb-5 border border-black rounded bg-gray-200 p-5 float">
+            <div class="flex flex-col bg-gray-300 p-5 border border-black rounded justify-center">
+                <img src="/images/kickAfriend.png" class="border border-black rounded">
+                <h1 class="text-center mx-auto mt-3">Kick A Friend!</h1>
+                <button class="bg-emerald-400 w-fit p-2 mx-auto rounded border border-black hover:bg-white transition-all duration-500 mt-3">
+                    <a href="https://www.roblox.com/games/14096903081/Kick-A-Friend" target="_blank">Visit</a>
+                </button>
+            </div>
+        </div>
+    
+        <div class="w-1/5 min-w-[250px] mb-5 border border-black rounded bg-gray-200 p-5 float2">
+            <div class="flex flex-col bg-gray-300 p-5 border border-black rounded justify-center">
+                <img src="/images/rollerRace.png" class="border border-black rounded">
+                <h1 class="text-center mx-auto mt-3">Roller Race</h1>
+                <button class="bg-emerald-400 w-fit p-2 mx-auto rounded border border-black hover:bg-white transition-all duration-500 mt-3">
+                    <a href="https://www.roblox.com/games/14480508720/Roller-Race-Simulator" target="_blank">Visit</a>
+                </button>
+            </div>
+        </div>
+    
+        <div class="w-1/5 min-w-[250px] mb-5 border border-black rounded bg-gray-200 p-5 float3">
+            <div class="flex flex-col bg-gray-300 p-5 border border-black rounded justify-center">
+                <img src="/images/bossTycoon.png" class="border border-black rounded">
+                <h1 class="text-center mx-auto mt-3">Boss Tycoon</h1>
+                <button class="bg-emerald-400 w-fit p-2 mx-auto rounded border border-black hover:bg-white transition-all duration-500 mt-3">
+                    <a href="https://www.roblox.com/games/18289320006/Boss-Tycoon" target="_blank">Visit</a>
+                </button>
+            </div>
+        </div>
+    
+        <div class="w-1/5 min-w-[250px] mb-5 border border-black rounded bg-gray-200 p-5 float4">
+            <div class="flex flex-col bg-gray-300 p-5 border border-black rounded justify-center">
+                <img src="/images/shootWallSim.png" class="border border-black rounded">
+                <h1 class="text-center mx-auto mt-3">Shoot A Wall</h1>
+                <button class="bg-emerald-400 w-fit p-2 mx-auto rounded border border-black hover:bg-white transition-all duration-500 mt-3">
+                    <a href="https://www.roblox.com/games/13028445510/Shoot-Wall-Simulator" target="_blank">Visit</a>
+                </button>
+            </div>
+        </div>
+            
+      </div>
+    
+    </div>
+    
+    <hr class="h-px my-10 w-1/2 bg-gray-500 border-0">
+
+    <!-- GFX Section -->
+
+    <div class="w-full flex flex-col justify-center p-5" id="gfx">
+      
+      <h1 class="text-3xl mb-10 underline text-center">GFX I've Made</h1>
+
+      <div class="wrapper mx-auto">
+        <div class="item item1">
+          <img src="/images/gfx-1.png" class="border border-black rounded">
+        </div>
+
+        <div class="item item2">
+          <img src="/images/gfx-2.png" class="border border-black rounded">
+        </div>
+
+        <div class="item item3">
+          <img src="/images/gfx-3.png" class="border border-black rounded">
+        </div>
+        
+        <div class="item item4">
+          <img src="/images/gfx-4.png" class="border border-black rounded">
+        </div>
+        
+        <div class="item item5">
+          <img src="/images/gfx-5.png" class="border border-black rounded">
+        </div>
+        
+        <div class="item item6">
+          <img src="/images/gfx-6.png" class="border border-black rounded">
+        </div>
+        
+        <div class="item item7">
+          <img src="/images/gfx-7.png" class="border border-black rounded">
+        </div>
+        
+        <div class="item item8">
+          <img src="/images/gfx-8.png" class="border border-black rounded">
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+<!-- Credits -->
+
+  <div class="flex flex-row justify-evenly items-center bg-white border-t border-black
+  p-5" id="contact">
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <div class="flex flex-col items-center">
+        
+      <div class="flex flex-col items-center">
+
+        <div class="w-14 border border-black rounded-full flex justify-center 
+        items-center hover:bg-blue-400 transition-all duration-500 hover:-translate-y-px
+        hover:shadow-lg hover:shadow-gray-500 hover:cursor-pointern" id="button">
+          <img src="/images/discord.png" class="w-14 rounded-full">
+        </div>
+
+        <p>
+          Discord
+        </p>
+
+      </div>
+
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <div class="flex flex-col items-center">
+        
+      <div class="flex flex-col items-center">
+        <a href="https://www.youtube.com/@TheReal_Niko" target="_blank">
+          <div class="w-14 border h-14 border-black rounded-full flex justify-center 
+          items-center hover:bg-red-400 transition-all duration-500 hover:-translate-y-px
+          hover:shadow-lg hover:shadow-gray-500 hover:cursor-pointer">
+            <img src="/images/youtube.png" class="w-10 rounded-full">
+          </div>
+        </a>
+
+        <p>
+          Youtube
+        </p>
+
+      </div>
+
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <div class="flex flex-col items-center">
+        
+      <div class="flex flex-col items-center">
+        <a href="https://www.roblox.com/users/929617681/profile" target="_blank">
+          <div class="w-14 border h-14 border-black rounded-full flex justify-center 
+          items-center hover:bg-gray-400 transition-all duration-500 hover:-translate-y-px
+          hover:shadow-lg hover:shadow-gray-500 hover:cursor-pointer">
+            <img src="/images/roblox.png" class="w-10 rounded-full">
+          </div>
+        </a>
+
+        <p>
+          Roblox
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<script src="sidebar.js"></script>
+</body>
+</html>
